@@ -1,8 +1,24 @@
 
+<!--
+           @direction   = {{"vertical"}}  |  {{"horizontal"}}
+           @gutter      = function
+           @gutterSize  = {{4}} 
+           @gutterAlign = {{ "center" }}  left/right/top/bottom
+           @gutterStyle = 
+           @sizes       = {{array 25 25 50}} 
+           @minSize     = {{array 20 20 20}}
+           @maxSize     = {{array 20 20 20}}
+           @expandToMin = {{ false }} | {{ true }}
+           @snapOffset  =
+           @snapOffsets =
+           @class       = {{"full-height"}}  | {{"half-height"}}
+
+-->
+
 <!--------------------------- DEMO #1  -->
 
-DEMO #1
-<div style="height:400px; width:600px;">
+<a>DEMO #1</a>
+<div style="height:400px; width:600px; margin 10px; border:2px solid #000000;">
 <SplitView 
            @direction   ={{"vertical"}} 
            @gutterSize = {{4}} 
@@ -22,8 +38,8 @@ DEMO #1
 <hr color="#ff0000">
 <!--------------------------- DEMO #2  -->
 
-DEMO #2
-<div style="height:400px;width: 800px;">
+<a>DEMO #2</a>
+<div style="height:400px;width: 800px; margin 10px; border:2px solid #000000;">
 <SplitView 
            @sizes     =  {{array 25 25 50}} 
            @minSize   =  {{array 20 20 20}}
@@ -50,3 +66,46 @@ DEMO #2
 
 </SplitView>
 </div>
+
+
+<hr color="#ff0000">
+<!--------------------------- DEMO #3  -->
+
+<a>DEMO #3</a>
+<div style="height:400px;width: 800px; margin 10px; border:2px solid #000000;">
+<SplitView 
+           @direction  ={{"vertical"}} 
+           @sizes     =  {{array 50 50}} 
+           @minSize   =  {{array 0   0}} 
+           @gutterSize ={{7}} 
+           @class      ={{"full-height"}}
+           >
+     <SplitView 
+                @sizes     =  {{array 25 25 50}} 
+                @minSize   =  {{array 20 20 20}}
+                @gutterSize=  {{7}}
+                @class     =  {{"full-height"}}
+                >
+     
+       <div class="col1">col1</div>
+       <div class="col2">col2</div>
+       <div class="col4">col4</div>
+     
+     </SplitView>
+     
+     <SplitView 
+                @direction  ={{"vertical"}} 
+                @sizes     =  {{array 50 50}} 
+                @minSize   =  {{array 10 10}} 
+                @gutterSize ={{7}} 
+                @class      ={{"full-height"}}
+                >
+     
+       <div class="col3">col3</div>
+       <div class="col5">col5</div>
+     
+     </SplitView>
+</SplitView>
+</div>
+
+
