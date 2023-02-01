@@ -1,7 +1,33 @@
+
+<!--------------------------- DEMO #1  -->
+
+DEMO #1
+<div style="height:400px; width:600px;">
+<SplitView 
+           @direction   ={{"vertical"}} 
+           @gutterSize = {{4}} 
+           @sizes      = {{array 25 25 50}} 
+           @minSize    = {{array 20 20 20}}
+           @class      = {{"full-height"}}
+           >
+
+  <div class="col1">col3</div>
+  <div class="col2">col5</div>
+  <div class="col3">col7</div>
+
+</SplitView>
+</div>
+
+
+<hr color="#ff0000">
+<!--------------------------- DEMO #2  -->
+
+DEMO #2
+<div style="height:400px;width: 800px;">
 <SplitView 
            @sizes     =  {{array 25 25 50}} 
            @minSize   =  {{array 20 20 20}}
-           @gutterSize=  {{7}} 
+           @gutterSize=  {{7}}
            @class     =  {{"half-height"}}
            >
 
@@ -13,6 +39,8 @@
 
 <SplitView 
            @direction  ={{"vertical"}} 
+           @sizes     =  {{array 50 50}} 
+           @minSize   =  {{array 10 10}} 
            @gutterSize ={{7}} 
            @class      ={{"half-height"}}
            >
@@ -21,3 +49,4 @@
   <div class="col5">col5</div>
 
 </SplitView>
+</div>
